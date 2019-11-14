@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="logo-white.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <title>Tudo Novo</title>
+</head>
+
+<body onload="getchat()">
+
+    <div class="menu">
+        <img src="logo-white.png">
+        <div class="options">
+            <a href="#">MENU</a>
+            <a href="#">PORTFOLIO DE MODELOS</a>
+            <a href="#">CONTATO</a>
+            <a href="#">TESTE</a>
+        </div>
+    </div>
+
+    <div id="chat">
+        <div id="chat-title" onclick="loadchat()">
+            <p>• Suporte Online, Fale Conosco :)</p>
+        </div>
+        <textarea id='dialogue'></textarea>
+        <div id="sendContainer">
+            <input id="inputText" placeholder="Informe sua dúvida" type="text" onkeydown="sendMessage()" value="">
+            <div id="sendTextBut" onclick="butSendMessage()"></div>
+        </div>
+    </div>
+
+    <div class="container-model">
+        <div class="container-image">
+            <img src="models/model-3.jpg">
+            <p></p>
+        </div>
+        <div class="container-description">
+            <p>Nome: Julie Aux</p>
+            <p>Idade: 25</p>
+            <p>Olhos: Azuis</p>
+            <p>Cabelo: Magenta</p>
+            <p>Altura: 1.67</p>
+            <p>Raça: Branca</p>
+            <p><a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+
+</html>

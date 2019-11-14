@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="../logos/logo-white.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <title>Tudo Novo</title>
+</head>
+
+<body>
+
+    <div class="open-close-menu">
+		<img id="mob-logo" src="../logos/logo-white.png">
+		<img id="mob-close" onclick="menuOnOff()" src="./icons/menu-button.png">
+	</div>
+	<div class="mobile-menu">
+		<a class="op" href="index.html">MENU</a>
+		<a class="op" href="portfolio.html">PORTFOLIO DE MODELOS</a>
+		<a class="op" href="#">TRABALHE CONOSCO</a>
+		<a class="op" href="">CONTATO</a>
+	</div>
+
+	<div class="menu">
+		<img src="../logos/logo-white.png">
+		<div class="options">
+			<a href="../index.html">MENU</a>
+			<a href="portfolio.html">PORTFOLIO DE MODELOS</a>
+			<a href="#">TRABALHE CONOSCO</a>
+			<a href="">CONTATO</a>
+		</div>
+	</div>
+
+
+    <form class="form-container">
+        <div class="form">
+            <p class="data title">Preencha os campos abaixo</p>
+            <p class="data">Nome*</p>
+            <input type="text" placeholder="Nome e sobrenome">
+            <p class="data">E-mail*</p>
+            <input type="email" placeholder="Seu melhor e-mail">
+            <p class="data">Data de Nascimento*</p>
+            <input type="date">
+            <p class="data">Faça uma breve descriçao sobre você e porque deseja ser um(a) modelo</p>
+            <textarea></textarea>
+            <p class="data">Foto*</p>
+            <input type="file"><br>
+        </div>
+        <button class="send-but">Enviar</button>
+    </form>
+
+    <div id="chat">
+        <div id="chat-title" onclick="loadchat()">
+            <p>• Suporte Online, Fale Conosco :)</p>
+        </div>
+        <textarea id='dialogue'></textarea>
+        <div id="sendContainer">
+            <input id="inputText" placeholder="Informe sua dúvida" type="text" onkeydown="sendMessage()" value="">
+            <div id="sendTextBut" onclick="butSendMessage()"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../script.js"></script>
+
+</body>
+
+
+</html>

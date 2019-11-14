@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="./logos/logo-white.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <title>Tudo Novo</title>
+</head>
+
+<body>
+
+    <div class="open-close-menu">
+		<img id="mob-logo" src="logo-white.png">
+		<img id="mob-close" onclick="menuOnOff()" src="menu-button.png">
+	</div>
+	<div class="mobile-menu">
+		<a class="op" href="index.html">MENU</a>
+		<a class="op" href="portfolio.html">PORTFOLIO DE MODELOS</a>
+		<a class="op" href="#">TRABALHE CONOSCO</a>
+		<a class="op" href="./contact/contato.html">CONTATO</a>
+	</div>
+
+	<div class="menu">
+		<img src="./logos/logo-white.png">
+		<div class="options">
+			<a href="index.html">MENU</a>
+			<a href="portfolio.html">PORTFOLIO DE MODELOS</a>
+			<a href="#">TRABALHE CONOSCO</a>
+			<a href="./contact/contato.html">CONTATO</a>
+		</div>
+	</div>
+
+	<div class="logo-images">
+		<img id="logo">
+	</div>
+
+    <div class="gallery-portfolio">
+        <h1>PORTFOLIO</h1>
+        <div class="gallery">
+            <div class="model">
+                <a href="profile-1.html"><img src="models/model-1.jpg">
+                    <p>ROSE WILD</p>
+                </a>
+            </div>
+            <div class="model">
+                <a href="#"><img src="models/model-2.jpg">
+                    <p>ARTHUR CURRY</p>
+                </a>
+            </div>
+            <div class="model">
+                <a href="#"><img src="models/model-3.png">
+                    <p>JULIE AUX</p>
+                </a>
+            </div>
+            <div class="model">
+                <a href="#"><img src="models/model-4.jpg">
+                    <p>CLARK KENT</p>
+                </a>
+            </div>
+            <div class="model">
+                <a href="#"><img src="models/model-5.jpg">
+                    <p>JUNE MOON</p>
+                </a>
+            </div>
+            <div class="model">
+                <a href="#"><img src="models/model-6.jpg">
+                    <p>CHARLES McLOVIN</p>
+                </a>
+            </div>
+
+        </div>
+        <div class="navpages">
+            <a href="#" class="prev"><</a>
+            <a href="#" class="num">1</a>
+            <a href="#" class="num">2</a>
+            <a href="#" class="num">3</a>
+            <a href="#" class="next">></a>
+        </div>
+    </div>
+
+    <div class="social-media">
+		<h3>Siga-nos nas Redes Sociais</h3>
+		<div class="buttons">
+			<a id="facebook" class="btn" href="#">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a id="twitter" class="btn" href="#">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a id="youtube" class="btn" href="#">
+				<i class="fab fa-youtube"></i>
+			</a>
+			<a id="instagram" class="btn" href="#">
+				<i class="fab fa-instagram"></i>
+			</a>
+		</div>
+		<h4>2019 © Todos Direitos Reservados - Tudo Novo Enterprises</h4>
+	</div>
+
+    <div id="chat">
+        <div id="chat-title" onclick="loadchat()">
+            <p>• Suporte Online, Fale Conosco :)</p>
+        </div>
+        <textarea id='dialogue'></textarea>
+        <div id="sendContainer">
+            <input id="inputText" placeholder="Informe sua dúvida" type="text" onkeydown="sendMessage()" value="">
+            <div id="sendTextBut" onclick="butSendMessage()"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+
+</html>
